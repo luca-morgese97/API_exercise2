@@ -1,0 +1,24 @@
+{
+  "name": "api_exercise2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node sunsrUSA.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luca-morgese97/API_exercise2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luca-morgese97/API_exercise2/issues"
+  },
+  "homepage": "https://github.com/luca-morgese97/API_exercise2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
