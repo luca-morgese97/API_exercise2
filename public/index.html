@@ -13,10 +13,10 @@
 <body>
 	<h3>Sunset Sunrise</h3>
 	<h6>Insert US city and US state sigla to get its sunrise and sunset time!</h6>
-	<form method="POST" action="/search">
-		<input type="text" id="city_name" placeholder="Insert city name">
-		<input type="text" id="state_name" placeholder="Insert State sigla">
-		<input type="submit" title="Search!">
+	<form method="GET" action="/search">
+		<input type="text" name="city_name" placeholder="Insert city name">
+		<input type="text" name="state_name" placeholder="Insert State sigla">
+		<input type="submit" value="Search!">
 	</form>
 </body>
 </html>
