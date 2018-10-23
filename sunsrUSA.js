@@ -38,6 +38,12 @@ app.get('/search', function(req, res) {
 		var location = city_name + "," + state_name;
 
 		console.log('location requested: ' + location);
+
+		if (!city_name || !state_name) {
+			res.status(400);
+			res.send("Bad request <br><br>"
+						+ "<form method='GET' action='/'> <input type='submit' value='Go back'></form>");
+		}
 		
 		//Asynchronous response get position data
 		var response = await getPos(location);
