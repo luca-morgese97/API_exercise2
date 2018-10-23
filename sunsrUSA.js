@@ -11,10 +11,8 @@ app.use(bodyParser.json());
 
 app.use('/', express.static('public'));
 
-app.post('/search', function(req, res) {
-	var city = req.body.city_name;
-	var state = req.body.state_name;
-	res.send(city +  ", " + state);
+app.get('/search', function(req, res) {
+	
 })
 
 app.listen(PORT, function(){
