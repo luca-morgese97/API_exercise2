@@ -25,11 +25,12 @@ app.use('/', express.static('public'));
 
 //Global consts
 const MQKEY = 'NrYb7rVBlGeuct1c86VvX1TwqD4oiUre';
-var pos = '';
 
 //Logic. Axios implements asynchronous calls
 
 app.get('/search', function(req, res) {
+	
+	//Async function wraps get functionality, used to asynchronize gets
 	const start = async () => {
 
 		//Get input data and prepare location variable
