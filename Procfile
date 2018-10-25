@@ -1,1 +1,1 @@
-web: node sunrsUSA.js
+web: node sunsrUSA.js
